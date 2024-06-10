@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealerships</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    /* Additional CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: darkturquoise;
+      height: 70px;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      margin-right: 5%;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+    }
+    #page-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px);
+    }
+    #contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #contact-icon-info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #contact-icon-box {
+      margin-bottom: 20px;
+    }
+    #contact-info-box {
+      max-width: 400px;
+    }
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .link {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <h2 class="navbar-brand">Dealerships</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="page-container">
+  <div id="contact-container">
+    <div id="contact-icon-info-box">
+      <div id="contact-icon-box">
+        <img id="phone-icon" src="https://media.istockphoto.com/photos/customer-service-representative-picture-id811473116?k=6&m=811473116&s=612x612&w=0&h=xLsD2Dk92RYf767O52HgOaXa4vwU0ALOsyS32EEtaE8=" alt="Phone Icon" style="height: 400px;">
+      </div>
+      
+      <div id="contact-info-box">
+        <p class="label">Customer Service</p>
+        <p class="link">support@elitcars.com</p>
+        <p class="label">Contact the elite cars offices</p>
+        <p class="link">643-312-4326</p>  
+        <p class="label">Become an elite cars car dealer</p>
+        <p class="link">Visit Elitecars.com</p>          
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
