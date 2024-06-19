@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 name: 'Lint Code'
 
 on:
@@ -54,7 +55,6 @@ jobs:
 
       - name: Run Linter
         run: |
-          /*jshint esversion: 8 */
           # This command finds all JavaScript files recursively and runs JSHint on them
           find ./server/database -name "*.js" -exec jshint {} +
           echo "Linted all the js files successfully"
